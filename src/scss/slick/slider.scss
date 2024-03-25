@@ -1,0 +1,129 @@
+.slick-list {
+	overflow: hidden;
+	padding: 0px 0px 0px 13px;
+}
+.slick-track {
+	display: flex;
+}
+
+.slider {
+	padding: 25px 0px 0px 0px;
+	box-sizing: content-box;
+
+	// .slider__container
+	&__container {
+	}
+	// .slider__body
+	&__body {
+		position: relative;
+		padding: 15px 30px 0px 30px;
+		& .slick-arrow {
+			position: absolute;
+			top: 50%;
+			z-index: 10;
+			font-size: 0;
+			display: inline-flex;
+			width: 20px;
+			height: 20px;
+			border-top: 3px solid rgb(255, 255, 255);
+			border-left: 3px solid rgb(255, 255, 255);
+			&.slick-disabled {
+				border-top: 3px solid rgb(201, 201, 201);
+				border-left: 3px solid rgb(201, 201, 201);
+			}
+		}
+		& .slick-arrow.slick-prev {
+			left: 0;
+			transform: rotate(-45deg);
+			margin: -14px 0px 0px 4px;
+		}
+		& .slick-arrow.slick-next {
+			right: 0;
+			transform: rotate(135deg);
+			margin: -14px 4px 0px 0px;
+		}
+	}
+	// .slider__column
+	&__column {
+		border-radius: 15px;
+		background: #fdfdfd;
+		text-align: center;
+		padding: 20px;
+		margin: 0px 15px 0px 0px;
+	}
+	// .slider__icon
+	&__icon {
+		& img {
+			height: 60px;
+			width: 60px;
+		}
+	}
+	// .slider__name
+	&__name {
+		color: #383838;
+		font-size: 20px;
+		font-weight: 600;
+		margin: 20px 0px;
+	}
+	// .slider__text
+	&__text {
+		color: rgba(56, 56, 56, 0.685);
+		font-size: 16px;
+		font-weight: 500;
+	}
+	@media (max-width: 520px) {
+		.slider__column {
+			width: 300px;
+			margin: 0px auto 0px auto;
+		}
+	}
+	@media (max-width: 400px) {
+		.slider__column {
+			margin: 0px 15px 0px 15px;
+			width: 100%;
+		}
+	}
+}
+
+//=====================================================================================
+// /* Слайдер */
+// .slick-slider{}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+// /* Ограничивающая оболочка */
+// .slick-list {
+// 	overflow: hidden;
+// }
+// /* Лента слайдов */
+// .slick-track{
+// 	display: flex;
+// }
+// /* Слайд */
+// .slick-slide{}
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+// /* Слайд основной */
+// .slick-slide.slick-current{}
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+// /* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+// /* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+// /* Активная точка */
+// .slick-dots li.slick-active{}
+// /* Элемент точки */
+// .slick-dots li button{}
+
+//===================

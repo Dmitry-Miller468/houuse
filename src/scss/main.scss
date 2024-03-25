@@ -1,0 +1,123 @@
+/* Base */
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+// @import "./slick/slider.scss";
+// @import "./blocks/form.scss";
+
+// @import "./biblio/swiper-bundle.min.css";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+[class*="ibg"] {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	img {
+		display: none;
+	}
+}
+
+.swiper-testimonials {
+	display: flex;
+	flex-direction: column;
+	// .swiper-testimonials__wrapper
+	&__wrapper {
+		display: flex;
+		align-items: stretch;
+	}
+	// .swiper-testimonials__slide
+	&__slide {
+		display: flex;
+	}
+	// .swiper-testimonials__body
+	&__body {
+		padding: 40px;
+		background: #1c1814;
+		@media (max-width:425px){
+			padding: 20px;
+		};
+	}
+	// .swiper-testimonials__block-icons
+	&__block-icons {
+	}
+	// .swiper-testimonials__icons
+	&__icons {
+		display: flex;
+		justify-content: center;
+		font-size: 50px;
+		color: #c99e71;
+		margin: 0px 0px 20px 0px;
+	}
+	// .swiper-testimonials__text
+	&__text {
+		text-align: center;
+	}
+	// .swiper-testimonials__navigation
+	&__navigation {
+		color: #ffff;
+	}
+}
+
+.navigation-swiper {
+	margin: 20px 0px 0px 0px;
+	// .navigation-swiper__body
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .navigation-swiper__block
+	&__block {
+	}
+	// .navigation-swiper__pagination
+	&__pagination {
+	}
+	// .navigation-swiper__scrollbar
+	&__scrollbar {
+		&.swiper-scrollbar, // Это указывает на элемент с классом swiper-scrollbar внутри navigation-swiper__scrollbar
+		&.swiper-scrollbar-horizontal { // То же самое для элементов с классом swiper-scrollbar-horizontal
+		  width: 300px;
+		  height: 5px;
+		  left: 0;
+		  bottom: 0;
+		  background-color: #2B2826;
+	 
+		  // Добавление стилей для драггабл элемента, если необходимо
+		  .swiper-scrollbar-drag {
+			 background-color: #c99e71; // Пример изменения драггабл элемента
+		  }
+		  @media (max-width:500px){
+			width: 150px;
+		  };
+		}
+
+	}
+	// .navigation-swiper__arrow
+	&__arrow {
+	}
+	// .navigation-swiper__arrowBtn
+	&__arrowBtn {
+		background: #c99e71;
+		border-radius: 50%;
+		width: 56px;
+		height: 56px;
+		color: #1c1814;
+		&.swiper-button-disabled {
+			color: #fff;
+			background: #121315;
+		}
+	}
+	// .navigation-swiper__arrow-prev
+	&__arrow-prev {
+	}
+	// .navigation-swiper__arrow-next
+	&__arrow-next {
+	}
+}
+

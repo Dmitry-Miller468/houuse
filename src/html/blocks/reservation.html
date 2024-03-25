@@ -1,0 +1,35 @@
+<section class="reservation">
+	<div class="reservation__conttainer container">
+		<div class="reservation__body">
+			<div class="reservation__column">
+				<div id="map-test" class="reservation__map">
+				</div>
+			</div>
+			<div class="reservation__column">
+				<div class="reservation__block">
+					<div class="reservation__top">
+						<div class="reservation__sub-title sub-title-body">Reservation</div>
+						<div class="reservation__title title-body">Booking a table</div>
+					</div>
+					<form class="reservation__form" id="booking-form" method="post">
+						<div class="booking-form__item">
+							<label class="booking-form__label" for="name">Name:</label>
+							<input class="booking-form__input" type="text" id="name" name="name" required>
+						</div>
+						<div class="booking-form__item">
+							<label class="booking-form__label" for="date">Data:</label>
+							<input class="booking-form__input custom-date-input" id="date" name="date" required>
+						</div>
+						<div class="booking-form__item">
+							<label class="booking-form__label" for="email">Email:</label>
+							<input class="booking-form__input" type="email" id="email" name="email" required>
+						</div>
+						<div class="booking-form__btn">
+							<button class="booking-form__button btn-primary" type="submit">BOOK S TABLE</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

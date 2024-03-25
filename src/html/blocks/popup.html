@@ -1,0 +1,41 @@
+<div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="" class="popup__close close-popup">X</a>
+			<form id="telegram" action="#" class="form__body form" autocomplete="off">
+				<div class="form__item">
+					<label for="popupName" class="form__label">Имя</label>
+					<input type="text" name="name" id="popupName" class="form__input" placeholder="Ваше имя"
+						autocomplete="off">
+						<div class="error" id="popupNameError"></div>
+				</div>
+				<div class="form__item">
+					<label for="popupPhone" class="form__label">Телефон</label>
+					<input id="popupPhone" type="tel" name="tel" class="form__input" placeholder="+7(___)___-__-__"
+						autocomplete="off">
+						<div class="error" id="popupPhoneError"></div>
+				</div>
+				<div class="form__item">
+					<label for="popupEmail" class="form__label">Email</label>
+					<input id="popupEmail" type="email" name="email" class="form__input" placeholder="exemple@mail.ru"
+						autocomplete="off">
+						<div class="error" id="popupEmailError"></div>
+				</div>
+				<div class="form__item">
+					<label for="popupMessage" class="form__label">Сообщение</label>
+					<textarea name="message" id="popupMessage" placeholder="Ваще сообщение"
+						class="form__textarea"></textarea>
+				</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input type="checkbox" checked name="agrement" class="checkbox__input">
+						<label for="agrement" class="checkbox__label">Я даю свое согласие на обработку персональных данных
+							в соответствии условием</label>
+					</div>
+				</div>
+				<button type="submit" class="form__button button">Отправить</button>
+				<div class="form__result"></div>
+			</form>
+		</div>
+	</div>
+</div>
